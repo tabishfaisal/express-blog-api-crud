@@ -1,39 +1,40 @@
 const posts = [
     {
-        id : 1,
-        title: "First Post",
-        content: "This is my first blog post.",
-        image: "images/post1.jpg",
-        tags: ["intro", "first"]
+        id: 1,
+        title: "Ricetta Ciambellone",
+        content: "Un delizioso ciambellone per la colazione.",
+        image: "ciambellone.jpeg",
+        tags: ["colazione", "dolci", "home made"]
     },
     {
         id: 2,
-        title: "Second Post",
-        content: "This is my second blog post.",
-        image: "images/post2.jpg",
-        tags: ["update", "news"]
+        title: "Cracker di Barbabietola",
+        content: "Semplici e gustosi cracker a base di barbabietola.",
+        image: "cracker_barbabietola.jpeg",
+        tags: ["snack", "sano", "barbabietola"]
     },
     {
         id: 3,
-        title: "Third Post",
-        content: "This is my third blog post.",
-        image: "images/post3.jpg",
-        tags: ["tutorial", "learning"]
+        title: "Pane Fritto Dolce",
+        content: "Un pane fritto dolce che piacerà a tutti.",
+        image: "pane_fritto_dolce.jpeg",
+        tags: ["dessert", "fritto", "comfort food"]
     },
     {
-        id : 4,
-        title: "Fourth Post",
-        content: "This is my fourth blog post.",
-        image: "images/post4.jpg",
-        tags: ["guide", "help"]
+        id: 4,
+        title: "Pasta alla Barbabietola",
+        content: "Deliziosa pasta colorata con barbabietola.",
+        image: "pasta_barbabietola.jpeg",
+        tags: ["primo", "vegetariano", "pasta"]
     },
     {
         id: 5,
-        title: "Fifth Post",
-        content: "This is my fifth blog post.",
-        image: "images/post5.jpg",
-        tags: ["info", "tips"]
+        title: "Torta Paesana",
+        content: "Una torta rustica perfetta per ogni occasione.",
+        image: "torta_paesana.jpeg",
+        tags: ["torta", "tradizionale", "festivo"]
     }
 ];
+
 
 module.exports = posts;

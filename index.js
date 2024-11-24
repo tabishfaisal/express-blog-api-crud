@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const postsRoute = require('./routes/postsRoute.js');
-const PORT = 4000;
+const PORT = 3000;
+const postrouter = require('./routes/postsRoute');
 
+app.use('/posts',postrouter);
 
-app.use('/posts',postsRoute);
+app.listen(PORT, ()=>{
+    console.log('server is runnning');
 
-app.listen(PORT , ()=>{
-    console.log("server is running");
-})
+});

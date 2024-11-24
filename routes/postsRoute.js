@@ -1,14 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const posts = require('../data/post.js');
+const postController = require('../controllers/postController.js');
 
-router.get('/',(req,res)=>{
-    res.send('list of posts')
-});
+router.get('/',postController.index);
 
-router.get('/:id',(req,res)=>{
-    const id= req.params.id;
-    res.send(`list of post with id:${id}`);
-});
+router.get('/:id',postController.show);
 
 router.post('/',(req,res)=>{
     res.send('list a post')
@@ -20,13 +17,19 @@ router.post('/:id',(req,res)=>{
 });
 
 router.put('/',(req,res)=>{
-    res.send('Put a new post')
+    res.send('update post')
 });
 
 router.put('/:id',(req,res)=>{
     const id=req.params.id;
-    res.send(`Put new Post with id ${id}`)
+    res.send(`update Post with id ${id}`)
 });
+router.patch('/:id', (req, res) => {
+    const id= req.params.id;
+    res.send(`Modify Post with id : ${id}`);
+});
+
+router.delete('/:id', postController.destory);
 
 module.exports = router;
 
