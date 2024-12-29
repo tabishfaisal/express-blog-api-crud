@@ -1,4 +1,4 @@
-const posts = [
+let posts = [
     {
         id: 1,
         title: "Ricetta Ciambellone",
@@ -37,4 +37,4 @@ const posts = [
 ];
 
 
-module.exports = posts;
+export default  posts;
